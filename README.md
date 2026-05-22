@@ -2,20 +2,7 @@ Codebase used on the 8889A Worlds Robot during the 2025-2026 VEX season "Push Ba
 
 This project was originally intended to be a library similar to other VEX projects such as JAR-Template or LemLib, but was never finished.
 
-The algorithms used in the codebase took over a thousand hours of testing and debugging over High Stakes and Push Back. Every little tip such as “the optical sensors are inconsistent because they update at 100ms intervals by default” took hours of debugging. 
-
-Tips for VEX programming:
-Consistency is more important than speed, don’t reduce consistency trying to squeeze half a second out of a rush.
-Consider programming/tracking when designing the robot such as distance, optical, and line tracker sensor placement.
-No code will ever be one hundred percent consistent. When the code misses once in a match, don’t rush to change things before the next match. 
-Don’t start your code while carrying or moving the robot or the IMU will drift.
-Plug the controller in before turning the robot on to prevent disconnects.
-This may be outdated for future VEX games because of the addition of apriltags. However, prior to this, these were the minimum setups for good localization (through experience):
-Traction wheel on drivetrain, no tracking wheels, no distance sensors, relative PID
-Traction wheel on drivetrain, vertical tracking wheel, no distance sensors, odometry
-No traction wheel, horizontal + vertical tracking wheel, no distance sensors, odometry
-Traction wheel, no tracking wheels, distance sensors, odometry
-No traction wheel, no tracking wheels, 6+ distance sensors, odometry
+The algorithms used in the codebase took over a thousand hours of testing and debugging over High Stakes and Push Back. Every little tip such as “the optical sensors are inconsistent because they update at 100ms intervals by default” took hours of debugging.
 
 The codebase supports many unique features and algorithms not commonly used by other teams. Below is a summary of the codebase:
 
